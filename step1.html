@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Session Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style media="screen">
+          body{
+            background-color: coral;
+            width: 60%;
+            margin: 0 auto;
+          }
+          h1{
+            font-size: 65px;
+            font-style: italic;
+            color: white;
+            text-align: center;
+          }
+          input{
+            background-color: silver;
+            font-size: 30px;
+          }
+          form{
+            text-align: center;
+          }
+          p{
+            text-align: center;
+            font-size: 30px;
+            color: pink;
+          }
+          button{
+            font-size: 20px;
+            font-style: italic;
+            color: yellow;
+            background-color: black;
+            padding: 5px;
+          }
+        </style>
+    </head>
+    <body>
+        <h1>Hello!! Here Is Another Version</h1>
+        <p>Please Fill your Username</p>
+        <form name="nam"action="step2.php" method="post" onsubmit="return validateForm()">
+            <input type="text" name="name" ><br><br><br><br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+        function validateForm() {
+          var x = document.forms["nam"]["name"].value;
+          if (x == "") {
+        alert("User_Name must be filled out");
+        return false;
+      }
+    }
+        </script>
+
+    </body>
+</html>
